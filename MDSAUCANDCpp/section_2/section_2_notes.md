@@ -68,3 +68,19 @@ struct Rectangle r1, r2, r3; // and this
 - Padding riles can be implementation defined and vary by compiler and system architecture.
   - Individual Member Alignment: Each member must start at a memory address that is a multiple of its natural alignment requirement (which is often, but not always, equal to its size). For example, an `int` (typically 4 bytes) generally needs to start at an address divisible by 4.
   - Structure Alignment: The total size of the entire `struct` is also padded (at the end) to be a multiple of the strictest alignment requirement of any of its member. This ensures that when the structures are used in an array, every element in the array is properly aligned.
+## Pointers
+- Pointers are variables that store memory addresses.
+- Heap memory is external to the program.
+  - To access it we need a pointer.
+- Pointer is useful for accessing resources outside of the program.
+- Syntax:
+```cpp
+int main() {
+  int a = 10;
+  int *p;
+  p = &a;
+  printf("%d", *p);
+}
+```
+## Practice : Pointers
+- Size of pointers is independent of its data type.
