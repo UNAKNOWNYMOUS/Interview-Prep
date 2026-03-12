@@ -84,3 +84,8 @@ int main() {
 ```
 ## Practice : Pointers
 - Size of pointers is independent of its data type.
+## Reference in C++
+- References are only available in C++ not in C.
+- Reference is a nickname/alias given to a variable.
+## Practice : Reference
+
