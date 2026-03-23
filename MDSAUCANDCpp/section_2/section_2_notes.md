@@ -88,4 +88,7 @@ int main() {
 - References are only available in C++ not in C.
 - Reference is a nickname/alias given to a variable.
 ## Practice : Reference
-
+- When declaring references, you must initialize them.
+## 11. Pointer to Structure
+- Use `*(struct_var).` to access data members from pointer or `->` operator.
+## 12. Practice : Pointer to Structure
