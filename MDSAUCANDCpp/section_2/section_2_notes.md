@@ -89,6 +89,7 @@ int main() {
 - Reference is a nickname/alias given to a variable.
 ## Practice : Reference
 - When declaring references, you must initialize them.
+- Size of a reference is compiler implementation defined.
 ## 11. Pointer to Structure
 - Use `*(struct_var).` to access data members from pointer or `->` operator.
 ## 12. Practice : Pointer to Structure
