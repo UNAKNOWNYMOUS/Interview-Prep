@@ -127,3 +127,10 @@ tags: []
 - Performance characteristics differ significantly between the two regions. Stack operations are extremely fast because allocation and deallocation simply move a pointer. Heap operations involve searching for available space and tracking allocations, adding overhead. When performance matters, keeping frequently accessed data on the stack can make a measurable difference.
 ## Stack Overflow Example
 - The stack provides fast, automatic memory management for local variables and function calls, but its small size limits what you can store there. The heap offers flexible, large-scale storage for objects and dynamic data, requiring either garbage collection or manual management. Most programs use both regions together.
+# References vs Values
+## Value Types Copy Directly
+- When you assign one variable to another, what happens depends on whether you're copying a value or a reference.
+## Reference Types Share Data
+- When you assign one variable to another, you copy the reference, not the entire object. Both variables now point to the same object in memory.
+## The Mutation Problem
+- 
