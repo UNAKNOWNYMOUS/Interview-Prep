@@ -131,6 +131,14 @@ tags: []
 ## Value Types Copy Directly
 - When you assign one variable to another, what happens depends on whether you're copying a value or a reference.
 ## Reference Types Share Data
-- When you assign one variable to another, you copy the reference, not the entire object. Both variables now point to the same object in memory.
 ## The Mutation Problem
-- 
+- This happens when passing objects to functions. The function receives a copy of the reference, pointing to the same object. If the function mutates the object, the caller sees the change. This is called "pass-by-reference" behavior, even though technically you're passing a copy of the reference.
+## When Copying Matters
+## Language Differences
+- In C++, you can pass by value (copy), by reference (with `&`), or by pointer.
+- In Rust, the ownership system makes copying explicit you must call `.clone()` to copy, and references are tracked by the compiler to prevent bugs.
+## Common Bugs from Shared References
+# Why Data Structures Matter
+## The Problem: Finding Data Fast
+- How you organize data determines how fast you can work with it.
+## Example: Linear Search in Unsorted Array
